@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{445DCD86-49FB-4280-982A-FFCFCB647DAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMSPROJECT</RootNamespace>
+    <AssemblyName>EMSPROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdminForm.Designer.cs">
+      <DependentUpon>AddAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="advancePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advancePayment.Designer.cs">
+      <DependentUpon>advancePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookingStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookingStatus.Designer.cs">
+      <DependentUpon>bookingStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookPackage.Designer.cs">
+      <DependentUpon>bookPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelBooking.Designer.cs">
+      <DependentUpon>cancelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerId.Designer.cs">
+      <DependentUpon>customerId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerStatus.Designer.cs">
+      <DependentUpon>customerStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAdmnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAdmnForm.Designer.cs">
+      <DependentUpon>DeleteAdmnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletecustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletecustomer.Designer.cs">
+      <DependentUpon>deletecustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deletevenue.Designer.cs">
+      <DependentUpon>Deletevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editBooking.Designer.cs">
+      <DependentUpon>editBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editcustomer.Designer.cs">
+      <DependentUpon>Editcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editvenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editvenue.Designer.cs">
+      <DependentUpon>editvenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addvenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addvenue.Designer.cs">
+      <DependentUpon>addvenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcustomer.Designer.cs">
+      <DependentUpon>Addcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin login.Designer.cs">
+      <DependentUpon>Admin login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMSDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMSDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main form.Designer.cs">
+      <DependentUpon>Main form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentProcessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentProcessing.Designer.cs">
+      <DependentUpon>paymentProcessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentReceivable1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentReceivable1.Designer.cs">
+      <DependentUpon>paymentReceivable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="venueStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="venueStatus.Designer.cs">
+      <DependentUpon>venueStatus.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAdminForm.resx">
+      <DependentUpon>AddAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advancePayment.resx">
+      <DependentUpon>advancePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookingStatus.resx">
+      <DependentUpon>bookingStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookPackage.resx">
+      <DependentUpon>bookPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelBooking.resx">
+      <DependentUpon>cancelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerId.resx">
+      <DependentUpon>customerId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerStatus.resx">
+      <DependentUpon>customerStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAdmnForm.resx">
+      <DependentUpon>DeleteAdmnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletecustomer.resx">
+      <DependentUpon>deletecustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletevenue.resx">
+      <DependentUpon>Deletevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editBooking.resx">
+      <DependentUpon>editBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editcustomer.resx">
+      <DependentUpon>Editcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editvenue.resx">
+      <DependentUpon>editvenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addvenue.resx">
+      <DependentUpon>addvenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addcustomer.resx">
+      <DependentUpon>Addcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main form.resx">
+      <DependentUpon>Main form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentProcessing.resx">
+      <DependentUpon>paymentProcessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentReceivable1.resx">
+      <DependentUpon>paymentReceivable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin login.resx">
+      <DependentUpon>Admin login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="venueStatus.resx">
+      <DependentUpon>venueStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="EMSDBDataSet.xsc">
+      <DependentUpon>EMSDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EMSDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMSDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EMSDBDataSet.xss">
+      <DependentUpon>EMSDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EMSDB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
